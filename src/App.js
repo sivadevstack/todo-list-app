@@ -10,6 +10,9 @@ function App() {
         <h1>React To-Do List ✅</h1>
       </header>
       <TodoList />
+      <div className="footer">
+        <p>© 2024 Your Name. All rights reserved.</p>
+      </div>
     </div>
   );
 }
