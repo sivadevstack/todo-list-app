@@ -1,0 +1,104 @@
+/* src/App.css */
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.App {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #4a4a4a;
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: #7b68ee;
+}
+
+.input-container button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #7b68ee; /* A nice purple */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.2s;
+}
+
+.input-container button:hover {
+  background-color: #5a48c6;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-list li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.todo-list li button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.2s;
+}
+
+.todo-list li:hover button {
+  opacity: 1; /* Show on hover */
+}
